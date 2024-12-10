@@ -1,1 +1,704 @@
+/* Google Fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Variables CSS */
+:root{
+    --header-height: 3rem;
+
+    /* Colores */
+    --title-color: #0B0A0A;
+    --text-color: #403A3A;
+    --text-color-light: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #F0EFEF;
+    --body-color: #FCFCFC;
+
+    /* Fuentes y tipografía */
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* Peso de la fuente/ Font Weight*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* Margenes */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+
+    /* Z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Base */
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Clases modificadas para reducir a A4 y poder imprimir */
+body{
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, ul, p{
+    margin: 0;
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Class CSS */
+.section{
+    padding: 1.5rem 0;
+}
+
+.section__title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    margin-bottom: var(--mb-3);
+}
+
+/* Layout */
+.bd-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
+    transition: all .3s;
+}
+
+/* NAV */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 968px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        background-color: var(--body-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        border-radius:1rem 1rem 0 0;
+        z-index: var(--z-fixed);
+        transition: all .5s;
+    }
+}
+
+.nav__logo,
+.nav__toggle{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__toggle{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav__item{
+    text-align: center;
+}
+
+.nav__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+    transition: all .3s;
+}
+
+.nav__link:hover{
+    color: var(--title-color);
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-1);
+}
+
+/* Show Menu */
+.show-menu{
+    bottom: var(--header-height);
+}
+
+/* Active menu link */
+.active-link{
+    color: var(--title-color);
+}
+
+/* HOME */
+.home{
+    position: relative;
+}
+
+.home__container{
+    gap: 3rem;
+}
+
+.home__data{
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.home__img{
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.home__title{
+    font-size: var(--h1-font-size);
+}
+
+.home__profession{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.home__address{
+    gap: 1rem;
+}
+
+.home__information{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.home__icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.home__button-movil{
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition:all .4s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+.home__button-movil:hover{
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+/* SOCIAL */
+.social__container{
+    grid-template-columns: max-content;
+    gap: 1rem;
+    margin-top: var(--mb-1);
+}
+
+.social__link{
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    transition: all .3s;
+}
+
+.social__link:hover{
+    color: var(--title-color);
+}
+
+.social__icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.social__name{
+    font-size: .8rem;
+}
+
+/* PROFILE */
+.profile__description{
+    text-align: justify;
+}
+
+/* EDUCACION AND EXPERIENCE*/
+.education__content, .experience__content{
+    display: flex;
+}
+
+.education__time, .experience__time{
+    padding-right: 1rem;
+}
+
+.education__rounder, .experience__rounder{
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+    margin-top: .25rem;
+}
+
+.education__line, .experience__line{
+    display: block;
+    width: 2px;
+    height: 110%;
+    background-color: var(--text-color-light);
+    transform: translate(7px,0);
+}
+
+.education__data, .experience__data{
+    gap: 0.5rem;
+}
+
+.education__title, .experience__title{
+    font-size: var(--h3-font-size);
+}
+
+.education__studies, .experience__company{
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.education__year{
+    font-size: var(--smaller-font-size);
+}
+
+/* SKILLS AND LANGUAGES */
+.skills__content,
+.languages__content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0; 
+}
+
+.skills__name,
+.languages__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+
+.skills__icon, .certificate__icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+    transition: all .3s;
+}
+
+.skills__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+.languages__circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: .75rem;
+}
+
+/* CERTIFICATES */
+.certificate__title,
+.references__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+/* References */
+.references__content{
+    gap: .25rem;
+}
+
+.references__subtitle{
+    color:var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact{
+    font-size: var(--smaller-font-size);
+}
+
+/* Interests */
+.interests__container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--mb-2);
+}
+
+.interests__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests__icon{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+/* Scroll Top */
+.scrolltop{
+    position:fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color:var(--container-color-alt);
+    border-radius: 50%;
+    z-index: var(--z-tooltip);
+    transition: all .4s;
+    visibility: hidden;
+}
+
+.scrolltop__icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 5rem;
+}
+
+/* Variables dark theme */
+body.dark-theme{
+    /* Colores */
+    --title-color: #f2f2f2;
+    --text-color: #BFBFBF;
+    /* --text-color-light: #F6B846; */
+    --container-color: #212121;
+    --container-color-alt: #181616;
+    --body-color: #2B2B2B;
+}
+/* Button Dark Light */
+.change-theme{
+    position: absolute;
+    right: 0rem;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--title-color);
+}
+/* Font Size variables to scale CV */
+body.scale-cv{
+    --h1-font-size: .938rem;
+    --h2-font-size: .938rem;
+    --h3-font-size: .875rem;
+    --normal-font-size: .813rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .688rem;
+}
+
+/* Generate PDf button */
+.generate-pdf{
+    display: none;
+    position: absolute;
+    top: 2.2em;
+    left: 0;
+    font-size: 1.2em;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.generate-pdf:hover{
+    color: var(--title-color);
+}
+
+.scale-cv .change-theme,
+.scale-cv .generate-pdf{
+    display: none;
+}
+
+.scale-cv .bd-container{
+    max-width: 595px;
+}
+
+.scale-cv .section{
+    padding: 1.5rem 0 0.8rem;
+}
+
+.scale-cv .section__title{
+    margin-bottom: .75rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right{
+    padding: 0 1rem;
+}
+
+.scale-cv .resume{
+    grid-template-columns: 1fr 1fr;
+}
+
+.scale-cv .home__img{
+    width: 90px;
+    height: 100px;
+}
+
+.scale-cv .home__container{
+    gap: 1.5rem;
+}
+
+.scale-cv .home__data{
+    gap: 0.25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container{
+    gap: 0.75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon{
+    font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container{
+    gap: 1rem;
+}
+
+.scale-cv .education__time,
+.scale-cv .experience__time{
+    padding-right: .5rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder{
+    width: 11px;
+    height: 11px;
+    margin-top: .20rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line{
+    width: 1px;
+    height: 105%;
+    transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data{
+    gap: 0.25rem;
+}
+
+.scale-cv .skills__name{
+    margin-bottom: var(--mb-1);
+}
+
+.scale-cv .skills__content{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.scale-cv .interests__container{
+    column-gap: 2.5rem;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    .nav__list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    body{
+        margin: 3rem 0;
+    }
+    
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .l-header,.scrolltop{
+        display: none;
+    }
+
+    .resume{
+        display: grid;
+        grid-template-columns: .7fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13, 12, 2, .2);
+    }
+
+    .resume__left{
+        background-color: var(--container-color-alt);
+    }
+
+    .resume__left,
+    .resume__right{
+        padding: 0 1.5rem;
+    }
+
+    .section__title,
+    .profile__description{
+        text-align: initial;
+    }
+
+    .home__container{
+        gap: 1.5rem;
+    }
+
+    .home__button-movil{
+        display: none;
+    }
+
+    .references__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .languages__content,
+    .interests__container{
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3.5rem;
+    }
+
+    .generate-pdf{
+        display: inline-block;
+    }
+    
+}
+
+body.scale-cv {
+    --h1-font-size: .938rem;
+    --h2-font-size: .938rem;
+    --h3-font-size: .875rem;
+    --normal-font-size: .813rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .688rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Forzar márgenes adecuados para impresión */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+    }
+    
+    #area-cv {
+        width: 210mm; /* Tamaño A4 */
+        margin: 10mm;
+        padding: 20mm;
+        background: white;
+    }
+
+    /* Evitar cortes dentro de secciones */
+    .section {
+        page-break-inside: avoid;
+    }
+
+    /* Forzar salto de página después de secciones importantes */
+    .education, .experience, .skills, .references {
+        page-break-after: always;
+    }
+
+    /* Evitar corte en imágenes, títulos y otros elementos importantes */
+    img, h2, h3, .home__title, .social__container {
+        page-break-inside: avoid;
+    }
+    
+    /* Evitar corte de texto en medio de párrafos */
+    p {
+        page-break-inside: avoid;
+    }
+
+    /* Asegurar que el contenedor principal no se divida entre páginas */
+    .resume {
+        page-break-inside: avoid;
+    }
+
+    /* Controlar el contenido del grid */
+    .resume__left, .resume__right {
+        padding: 1rem;
+    }
+
+    .skills__content, .interests__container {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+/* Hide PDF generation button in print mode */
+.scale-cv .generate-pdf {
+    display: none;
+}
