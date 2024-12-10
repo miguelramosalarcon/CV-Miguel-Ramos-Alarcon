@@ -30,7 +30,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 <details>
     <summary>📱 Tablet version</summary>
-
+<img src="tablet.png" width="300" height="auto">
 ![](tablet.png)
 </details>
 <details>
