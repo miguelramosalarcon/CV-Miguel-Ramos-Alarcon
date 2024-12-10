@@ -25,7 +25,7 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 <details>
     <summary>🖥️ Desktop version</summary>
 
-![](desktop.png)
+![](desktop-mr.png)
 </details>
 
 <details>
