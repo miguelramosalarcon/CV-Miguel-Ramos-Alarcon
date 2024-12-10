@@ -1,6 +1,6 @@
 # CV Miguel Ramos Alarcon - Online
 
-<img src="desktopmr.png" alt="CV-MiguelRamosAlarcon" style="max-width: 70%; height: auto;">
+<img src="desktop-mr.png" alt="CV-MiguelRamosAlarcon" style="max-width: 70%; height: auto;">
 
 <div align="center">
   <img src="https://img.shields.io/badge/FrontEnd-HTML%2BCSS-yellow" alt="FrontEnd - HTML+CSS">
