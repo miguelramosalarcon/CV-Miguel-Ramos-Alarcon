@@ -30,13 +30,11 @@ Diseño adaptado para cualquier tipo de pantalla del dispositivo:
 
 <details>
     <summary>📱 Tablet version</summary>
-<img src="tablet.png" width="300" height="auto">
-![](tablet.png)
+<img src="tablet.png" width="400" height="auto">
 </details>
 <details>
     <summary>📱 Mobile version</summary>
-
-![](celular.png)
+<img src="celular.png" width="400" height="auto">
 </details>
 
 ### El proyecto se encuentra alojado en mi repositorio de GitHub:
