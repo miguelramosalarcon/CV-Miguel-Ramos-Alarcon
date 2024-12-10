@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae de Miguel Ramos Alarcon, desarrollador web especializado en HTML, CSS, JavaScript y otras tecnologías.">
+    <meta name="keywords" content="Currículum Vitae, Desarrollador Web, HTML, CSS, JavaScript, Programador, Freelancer, PHP, Java, Github">
+    <meta name="author" content="Miguel Ramos Alarcon">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Currículum Vitae de Miguel A. Ramos Alarcon">
+    <meta property="og:description" content="Desarrollador web con experiencia en HTML, CSS y JavaScript.">
+    <meta property="og:image" content="assets/img/CV-Miguel-Ramos.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://tu-sitio.com/cv">
+    <meta property="og:type" content="website">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Currículum Vitae de Miguel A. Ramos Alarcon">
+    <meta name="twitter:description" content="Desarrollador web con experiencia en múltiples tecnologías.">
+    <meta name="twitter:image" content="assets/img/CV-Miguel-Ramos-twitter.jpg">
+    <!-- Boxi Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Miguel A. Ramos Alarcon</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header" id="header" role="banner">
+        <nav class="nav bd-container">
+            <a href="" class="nav__logo" aria-label="Ir a la página de inicio">{Miguel Ramos}</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" role="list">
+                    <li class="nav__item" role="listitem">
+                        <a href="#home" class="nav__link active-link" aria-current="page">
+                            <i class='bx bx-home nav__icon'></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link" aria-current="page">
+                            <i class='bx bx-user nav__icon'></i> Perfil
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link" aria-current="page">
+                            <i class='bx bx-book nav__icon'></i> Educación
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" aria-current="page">
+                            <i class='bx bx-receipt nav__icon'></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link" aria-current="page">
+                            <i class='bx bx-briefcase-alt nav__icon' ></i> Experiencia
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link" aria-current="page">
+                            <i class='bx bx-award nav__icon'></i> Capacitaciones
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link" aria-current="page">
+                            <i class='bx bx-link-external nav__icon'></i> Referencias
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/Foto-Miguel-Ramos-Alarcon.jpg" alt="Miguel Ramos Alarcon" class="home__img">
+                            <h1 class="home__title">Miguel Ramos Alarcon</h1>
+                            <h3 class="home__profession">Full Stack Developer and <br> Creative Designer </h3>
+                            <!-- Button download CV -->
+                            <div>
+                                <a download="" href="assets/pdf/CVMiguelRamos2024pdf" class="home__button-movil">Descargar CV</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> Cal. Las Postas 383 - Urb. Zarate, SJL
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> mramos20681@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> (+51) 986 397 215
+                            </span>
+                        </div> 
+                    </div>
+                    <!-- Dark Light Mode -->
+                    <i class='bx bx-moon change-theme' title='Dark/Light Mode' id='theme-button'></i>
+                    <!-- Download CV only desktop -->
+                    <i class='bx bx-download generate-pdf' title='Generar PDF' id='resume-button'></i>
+                </section>
+                
+                <!-- Social -->
+                <section class="social section">
+                    <h2 class="section__title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/miguel-alonso-ramos-alarcon/" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon' ></i>  <span class="social__name">Linkedin</span>  
+                        </a>
+                        <a href="https://github.com/miguelramosalarcon" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon' ></i>  <span class="social__name">Github</span>
+                        </a>
+                        <a href="https://www.facebook.com/miguelramosdev" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon' ></i> <span class="social__name"> Facebook</span>
+                        </a>
+                        <a href="https://wa.link/jb851s" target="_blank" class="social__link">
+                            <i class='bx bxl-whatsapp social__icon' ></i> <span class="social__name"> Whatsapp</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Profile -->
+                <section class="profile section" id="profile">
+                    <h2 class="section__title">Presentación</h2>
+                    <p class="profile__description">
+                        Desarrollador web con experiencia en HTML, CSS, JavaScript, PHP, Mysql; WordPress, WooCommerce. Con conocimentos avanzados en
+                        diseño gráfico, Edición de Video, Marketing Digital. Apasionado por la tecnología, la programación y el aprendizaje continuo.
+                    </p>
+                </section>
+
+                <!-- Education -->
+                <section class="education section" id="education">
+                    <h2 class="section__title">Educación</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Técnico Computación e Informática</h3>
+                                <span class="education__studies">I.E.S.T.P "Argentina"</span>
+                                <span class="education__year">2021 - 2023</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="skills section" id="skills">
+                    <h2 class="section__title">Skills</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <h3 class="skills__title">FrontEnd</h3>
+                            <li class="skills__name">
+                                <i class='bx bxl-html5 skills__icon'></i> Html
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bxl-css3 skills__icon'></i> Css
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bxl-bootstrap skills__icon'></i> Bootstrap
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bxl-javascript skills__icon'></i> Javascript
+                            </li>
+                            <!-- <li class="skills__name">
+                                <i class='bx bxl-react skills__icon'></i> React
+                            </li> -->
+                        </ul>
+                        <ul class="skills__data">
+                            <h3 class="skills__title">BackEnd</h3>
+                            <li class="skills__name">
+                                <i class='bx bxl-php skills__icon'></i> PHP
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-data skills__icon'></i> MySql
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-data skills__icon'></i> SQL
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <h3 class="skills__title">Full Stack</h3>
+                            <li class="skills__name">
+                                <i class='bx bxl-wordpress skills__icon'></i> Wordpress
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-cart skills__icon'></i> WooCommerce
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bxl-shopify skills__icon'></i> Shopify
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <h3 class="skills__title">Diseño y prototipado</h3>
+                            <li class="skills__name">
+                                <i class='bx bxl-figma skills__icon'></i> Figma
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-pen skills__icon'></i> Corel Draw
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-vector skills__icon'></i> Illustrator
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-paint skills__icon'></i> Photoshop
+                            </li>
+                            <li class="skills__name">
+                                <i class='bx bx-video skills__icon'></i> Premier Pro
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="resume__right">
+                <!-- Experience -->
+                <section class="experience section" id="experience">
+                    <h2 class="section__title">Experiencia</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Docente Desarrollo Web</h3>
+                                <span class="experience__company"> Setiembre 2024 a noviembre 2024 | Eifex SAC</span>
+                                <p class="experience__description">
+                                    Imparto enseñanza a nivel superior, estudiantes de Institutos, Universidades y/o público
+                                    en general sobre diseño y desarrollo web, asi como también sobre programación PHP y
+                                    gestión de Base de datos MySql.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Técnico Informático - Desarrollador Web</h3>
+                                <span class="experience__company"> Enero 2019 a Julio 2024 | Sensor Srl</span>
+                                <p class="experience__description">
+                                    Diseñé, desarrollé e implementé el sitio web de la empresa: PHP, MySQL, WordPress.
+                                    Creé contenido gráfico y audiovisual para redes sociales y gestioné como Community Manager.
+                                    Realicé mantenimiento predictivo, preventivo y correctivo de equipos de cómputo.
+                                </p>
+                            </div>
+                        </div> 
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Técnico Informático</h3>
+                                <span class="experience__company"> Enero 2007 a Agosto 2018 | Idice del Perú SAC</span>
+                                <p class="experience__description">
+                                    Brindé soporte, preventivo, correctivo de los equipos de cómputo.
+                                    Realicé el diseño, diagramación de la Revista Pulso Municial. 
+                                    Cree contenido gráfico para la página de Facebook de la empresa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Freelance</h3>
+                                <span class="experience__company"> Enero 2020 a la fecha | MR</span>
+                                <p class="experience__description">
+                                    A la fecha he realizado más de 10 páginas webs de forme independiente.
+                                    Siendo en su mayoría Ecommerce Tiendas virtuales para emprendedores.
+                                    Asesorías en marketing digital, diseño de brochure, SEO y SEM.
+                                </p>
+                            </div>
+                        </div>    
+                    </div> 
+                </section>
+
+                <!-- Certificates -->
+            <section class="certificates section" id="certificates">
+                <h2 class="section__title">Capacitaciones</h2>
+                <div class="certificate__container bd-grid">
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Competencias digitales (2024)</h3>
+                        <i class='bx bxl-google certificate__icon' ></i>Google Actívate
+                        <p class="certificate__description">
+                            Competencias digitales, resolución de problemas, seguridad informática, correcto
+                            tratamiento de la información, creación de contenido, etc.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Productividad personal (2024)</h3>
+                        <i class='bx bxl-google certificate__icon' ></i>Google Actívate
+                        <p class="certificate__description">
+                            Competencias digitales, resolución de problemas, seguridad informática, correcto
+                            tratamiento de la información, creación de contenido, etc.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Técnico en instalación y reparación de equipos de cómputo (2024)</h3>
+                        <i class='bx bxs-certification certificate__icon' ></i>Fundación Carlos Slim
+                        <p class="certificate__description">
+                            Técnico en instalación y reparación de equipos de cómputo de 103 horas.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Amalista de optimización SEO (2024)</h3>
+                        <i class='bx bxs-certification certificate__icon' ></i>Fundación Carlos Slim
+                        <p class="certificate__description">
+                            Analista de optimización en motores de búsqueda SEO de 11 horas.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Microsoft Word (2024)</h3>
+                        <i class='bx bxs-certification certificate__icon' ></i>Fundación Romero
+                        <p class="certificate__description">
+                            Curso de Microsoft Word nivel intermedio 08 horas.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Microsoft Power Point (2024)</h3>
+                        <i class='bx bxs-certification certificate__icon' ></i>Fundación Romero
+                        <p class="certificate__description">
+                            Curso de Microsoft Power Point nivel intermedio de 07 horas.
+                        </p>
+                    </div>
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">Microsoft Excel (2024)</h3>
+                        <i class='bx bxs-certification certificate__icon' ></i>Conecta Empleo
+                        <p class="certificate__description">
+                            Curso de Microsoft Excel nivel avanzado de 30 horas.
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="references section" id="references">
+                <h2 class="section__title">Referencias</h2>
+                
+                <div class="references__container bd-grid">
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Eifex SAC - Gerente General</span>
+                        <h3 class="references__title">Mag. Aristides Llanos</h3>
+                        <ul class="references__contact">
+                            <li>Cel: 996 335 053</li>
+                            <li>Email: ggeneral@eifex.edu.pe</li>
+                        </ul>
+                    </div>
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Sensor SRL - Gerente General</span>
+                        <h3 class="references__title">Eco. Marco Arbildo</h3>
+                        <ul class="references__contact">
+                            <li>Cel: 999 400 666</li>
+                            <li>Email: sensorsrl@sensor.pe</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Languages -->
+            <section class="languages section">
+                <div class="section__title">Idiomas</div>
+
+                <div class="languages__container">
+                    <ul class="languages__content bd-grid">
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> Español
+                        </li>
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> Ingles B2
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Interests -->
+            <section class="interests section">
+                <h2 class="section__title">Intereses</h2>
+                <div class="interests__container bd-grid">
+                    <div class="interests__content">
+                        <i class='bx bx-football interests__icon'></i>
+                        <span class="interests__name">Fútbol</span>
+                    </div>
+                    <div class="interests__content">
+                        <i class='bx bx-headphone interests__icon'></i>
+                        <span class="interests__name">Música</span>
+                    </div>
+                    <div class="interests__content">
+                        <i class='bx bx-movie-play interests__icon'></i>
+                        <span class="interests__name">Cine</span>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    <!-- HTML2PDF JS -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
